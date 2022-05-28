@@ -115,8 +115,10 @@ section {
   padding: 1.1rem 0;
 }
 .search-btn {
-  color: var(--clr-success);
+  border: 1.5px solid var(--clr-success);
   border-color: var(--clr-success);
+  color: var(--clr-success);
+  cursor: pointer;
   outline: none;
 }
 .search-field {
