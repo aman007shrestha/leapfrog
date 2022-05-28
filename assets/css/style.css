@@ -1,0 +1,54 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #2e2c28;
+}
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #2e2c28;
+}
+.container {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
+}
+.tabulated {
+  border-collapse: collapse;
+  width: 500px;
+  margin: auto;
+}
+.tabulated th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2e2c28;
+  color: white;
+}
+.tabulated td,
+.tabulated th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-left: none;
+  border-right: none;
+}
