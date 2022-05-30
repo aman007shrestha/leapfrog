@@ -1,0 +1,44 @@
+@import url('./variable.css');
+
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  font-family: 'Robot', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.56rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+p {
+  color: var(--clr-secondary-font);
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}

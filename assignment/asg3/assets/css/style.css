@@ -1,0 +1,63 @@
+@import url('./variable.css');
+header span {
+  color: var(--clr-primary-1);
+}
+.contact {
+  padding: 16px 30px;
+  float: right;
+}
+
+.hero-left {
+  float: left;
+  width: 500px;
+  padding: 58.5px 0;
+}
+.hero-right {
+  float: right;
+}
+.lead {
+  font-weight: 700;
+  line-height: 47px;
+}
+.description {
+  margin-right: 46px;
+  margin-top: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+.about-btn {
+  background-color: var(--btn-secondaryBg);
+  color: var(--clr-primary-1);
+  margin-left: 10px;
+}
+.about-btn:hover {
+  background-color: #9da1a6;
+}
+.icon-1 {
+  background-color: var(--clr-iconBg-1);
+}
+.icon-2 {
+  background-color: var(--clr-iconBg-2);
+}
+.icon-3 {
+  background-color: var(--clr-iconBg-3);
+}
+.icon-4 {
+  background-color: var(--clr-iconBg-4);
+}
+.info h5 {
+  color: white;
+}
+.info li {
+  color: var(--footer-text);
+  margin-bottom: 1rem;
+}
+.info ul {
+  margin-top: 24px;
+}
+.top-footer p {
+  color: var(--footer-text);
+  line-height: 24px;
+  margin-top: 12px;
+}
