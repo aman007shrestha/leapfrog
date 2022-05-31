@@ -1,10 +1,21 @@
 @import url('./variable.css');
 
+.navbar-fix {
+  position: fixed;
+  top: 0px;
+  background-color: var(--clr-white);
+  width: 100vw;
+  z-index: 2;
+}
+.navbar-fix::after {
+  content: '';
+  margin-bottom: 42px;
+}
 header {
   width: 95vw;
   max-width: 1440px;
   margin: auto;
-  padding: 32px 40px;
+  padding: 10px 40px;
   overflow: hidden;
 }
 .logo {
@@ -74,6 +85,7 @@ nav li a {
   max-width: 1200px;
   margin: auto;
   color: var(--clr-secondary-font);
+  margin-top: 5rem;
 }
 .hero h1 {
   color: var(--clr-primary-font);
@@ -250,8 +262,12 @@ footer {
     padding: 16px 0;
   }
   header {
-    padding: 16px 20px;
+    padding: 10px 20px;
     width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
   }
   .contact {
     margin: 3px 0;
