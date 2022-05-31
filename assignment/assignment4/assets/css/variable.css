@@ -1,0 +1,23 @@
+:root {
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-primary-1: #4e42d9;
+  --clr-bg4: #363636;
+  --footer-text: rgba(255, 255, 255, 0.8);
+  --btn-hover: #251c91;
+  /* Font Color */
+  --clr-primary-font: #3b3950;
+  --clr-secondary-font: #797979;
+  /* section color */
+  --bg-secondary: #f8f8f8;
+  --footer-bgColor: #292838;
+  /* Icon color */
+  --clr-iconBg-1: #fff2f2;
+  --clr-iconBg-2: #e2f3ff;
+  --clr-iconBg-3: #fdfbda;
+  --clr-iconBg-4: #ffe7fb;
+  --radius-icon: 20px;
+  --btn-secondaryBg: rgba(78, 66, 217, 0.18);
+  --radius-btn: 4px;
+  --line-height: 24px;
+}
