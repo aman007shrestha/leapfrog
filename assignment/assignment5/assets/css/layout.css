@@ -429,6 +429,7 @@ option {
 .card {
   float: left;
   width: 280px;
+  border-radius: 5px;
   box-shadow: var(--light-shadow);
   margin-right: 40px;
 }
