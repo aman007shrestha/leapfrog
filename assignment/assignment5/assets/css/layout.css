@@ -553,3 +553,8 @@ option {
   margin-left: 15px;
   margin-bottom: -5px;
 }
+
+.card-bottom-text {
+  text-align: center;
+  margin: 15px 0 18px 0;
+}
