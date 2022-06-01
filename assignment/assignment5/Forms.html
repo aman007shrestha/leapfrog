@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="../../assets/image/lf.png" type="image/icon type" />
+    <title>Assignment 5</title>
+    <link rel="icon" href="../../image/lf.png" type="image/icon" />
+  </head>
+  <body>
+    <!-- Navbar Start 13:47 -->
+    <header>
+      <nav>
+        <div class="nav-left">
+          <div class="logo">UI KIT</div>
+          <div class="links">
+            <ul>
+              <li><a href="./index.html">Colors</a></li>
+              <li><a href="./Typography.html">Typography</a></li>
+              <li><a href="./Buttons.html">Buttons</a></li>
+              <li><a href="./Forms.html">Forms</a></li>
+              <li><a href="./Listgroup.html">List Group</a></li>
+              <li><a href="./Table.html">Table</a></li>
+              <li><a href="./Card.html">Card</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-right">
+          <input type="text" class="search-input" placeholder="Search" />
+
+          <button class="btn search-btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Form start time 8: 09 -->
+    <section class="container">
+      <h1 class="title color-title">Forms</h1>
+      <div class="divider"></div>
+      <div class="form-body float-group">
+        <div class="float-left formbody-left">
+          <h3 class="color-title form-left-title">Components</h3>
+          <ul class="form-list-contents">
+            <li>Color</li>
+            <li>Typography</li>
+            <li>Buttons</li>
+            <li>Forms</li>
+            <li>List Group</li>
+            <li>Table</li>
+            <li>Card</li>
+          </ul>
+        </div>
+        <div class="float-left">
+          <div>
+            <h3 class="color-title"><label for="input">Input</label></h3>
+            <input type="text" id="input" placeholder="Placeholder" />
+          </div>
+          <div>
+            <h3 class="color-title">
+              <label for="selection">Select Menu</label>
+            </h3>
+            <select name="selection" id="selection">
+              <option value="">Select Menu</option>
+              <option value="male">male</option>
+              <option value="femaile">female</option>
+            </select>
+          </div>
+          <div>
+            <h3 class="color-title">Textarea</h3>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+          <div class="checkbox-tab">
+            <h3 class="color-title">Checkboxes</h3>
+            <div class="check-group float-group">
+              <div class="checkbox-left float-left">
+                Checkboxes
+                <br />
+                <input type="checkbox" name="" id="" class="mt-18" /> Default
+                Checkbox <br />
+                <input type="checkbox" name="" id="" checked class="mt-18" />
+                Default Checkbox
+                <br />
+                <div class="disabled">
+                  <input type="checkbox" name="" disabled class="mt-18" />
+                  Default(disabled)
+                </div>
+              </div>
+              <div class="checkbox-right float-left float-group">
+                Checkboxes inline <br />
+                <div></div>
+                <div class="float-left mr-48 mt-18">
+                  <input type="checkbox" name="" id="" /> Default Checkbox
+                  <br />
+                </div>
+                <div class="float-left mr-48 mt-18">
+                  <input type="checkbox" name="" id="" checked /> Default
+                  Checkbox
+                  <br />
+                </div>
+                <div class="float-left mr-48 mt-18 disabled">
+                  <input type="checkbox" name="" id="" disabled /> Disabled
+                  Checkbox
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validation field -->
+          <div class="validation-container">
+            <h3 class="color-title">Validation</h3>
+            <div class="input-container-validation">
+              <label for="success" class="label-validation"
+                >Input Success</label
+              >
+              <input
+                type="text"
+                id="success"
+                class="input-validation field-success"
+              />
+            </div>
+
+            <div class="input-container-validation">
+              <label for="error" class="label-validation">Input Error</label>
+              <input
+                type="text"
+                id="error"
+                class="input-validation field-danger"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<!-- End time 9: 10 -->

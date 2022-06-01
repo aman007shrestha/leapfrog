@@ -1,0 +1,27 @@
+.color-title {
+  color: var(--clr-title);
+}
+.float-group {
+  overflow: hidden;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.my-2rem {
+  margin: 2rem 0;
+}
+.mt-18 {
+  margin-top: 18px;
+}
+.mb-18 {
+  margin-bottom: 18px;
+}
+.mr-48 {
+  margin-right: 48px;
+}
+.logo a {
+  color: black;
+}

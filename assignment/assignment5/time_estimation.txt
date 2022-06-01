@@ -1,0 +1,30 @@
+Initial Preparation {
+  file Structure
+  Color composition for variable.css
+  reset.css
+  23 minutes
+} 
+Navbar {40 minutes}
+Color Component {15 minutes}
+Typography{
+  (Body inline text) 30minutes
+  Tabs 39 minutes
+} 
+
+Buttons (20minutes)
+forms {
+1 hour 9 minutes
+}
+list group {
+  35 minutes
+}
+table {
+  table: 10 minutes
+  pagination: 15 minutes
+}
+card {
+  1: 40 minutes
+  2: 20 minutes
+  3: 30 minutes 
+
+}
