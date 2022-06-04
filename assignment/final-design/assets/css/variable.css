@@ -1,0 +1,11 @@
+:root {
+  --clr-primary: #458ff6;
+  --clr-primary-dark: #233348;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --text-primary: #7d7987;
+  --link-primary: #1f1534;
+  --btn-radius: 55px;
+  --img-bg: #c4c4c4;
+}
