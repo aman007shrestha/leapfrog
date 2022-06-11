@@ -49,13 +49,13 @@ class Ball {
     if (this.x >= boxBoundary.width - this.diameter) {
       this.sx *= -1;
     }
-    if (this.x <= boxBoundary.left) {
+    if (this.x <= 0) {
       this.sx *= -1;
     }
     if (this.y >= boxBoundary.height - this.diameter) {
       this.sy *= -1;
     }
-    if (this.y <= boxBoundary.top) {
+    if (this.y <= 0) {
       this.sy *= -1;
     }
   }
