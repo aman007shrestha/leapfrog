@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: relative;
+  background-color: gray;
+  height: 100vh;
+}
+.home {
+  background-image: url('../image/background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: block;
+  z-index: 2;
+}
+.help {
+  font-size: 32px;
+  color: white;
+  position: relative;
+  top: 10%;
+}
+.home__button {
+  position: absolute;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: gray;
+  top: 20%;
+}
+.game-over--menu {
+  height: 100px;
+  width: 500px;
+  padding: 20px;
+  display: none;
+  justify-content: space-between;
+  z-index: 2;
+  align-items: center;
+  background-color: gainsboro;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.score--info {
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.score {
+  color: #333;
+  font-size: 32px;
+  right: 50px;
+  height: 50px;
+  width: 200px;
+  top: 50px;
+  display: block;
+  z-index: 2;
+}
+.restart {
+  height: 20px;
+}
+.game {
+  width: 450px;
+  margin: auto;
+  height: 90vh;
+  margin-bottom: 0;
+  position: relative;
+  background-image: url('../image/raod-2.png');
+  background-repeat: repeat;
+  animation: animateRoad 1s linear infinite;
+}
+.game::before {
+  content: '';
+  background-image: url('../image/raod-left.png');
+  position: absolute;
+  left: -160px;
+  top: 0;
+  width: 160px;
+  height: 90vh;
+  background-repeat: repeat-y;
+  animation: animateRoad 1s linear infinite;
+}
+.game::after {
+  content: '';
+  background-image: url('../image/road-right.png');
+  position: absolute;
+  right: -160px;
+  top: 0;
+  width: 160px;
+  height: 90vh;
+  background-repeat: repeat-y;
+  animation: animateRoad 1s linear infinite;
+}
+.player {
+  background-image: url('../image/player.png');
+  object-fit: fill;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 80px;
+}
+.opponent {
+  background-image: url('../image/opponent.png');
+  object-fit: fill;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 80px;
+}
+.game__score {
+  position: absolute;
+  color: white;
+  font-size: 32px;
+  left: 50%;
+  transform: translateX(-25%);
+  height: 50px;
+  width: 200px;
+  top: 50px;
+  display: block;
+  z-index: 2;
+}
+
+@keyframes animateRoad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 584px;
+  }
+}
