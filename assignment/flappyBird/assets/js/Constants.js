@@ -1,0 +1,4 @@
+const GRAVITY = 2;
+const GAP = 150;
+const CONTAINER_HEIGHT = 500;
+const OBSTACLE_WIDTH = 52;

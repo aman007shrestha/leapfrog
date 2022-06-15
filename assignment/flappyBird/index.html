@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="../../image/lf.png" type="image/icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        <img src="./assets/image/flappy.png" alt="" class="start__img" />
+        <img src="./assets/image/play.png" alt="" class="play__img" />
+        <div class="best__score">Best: 21</div>
+      </div>
+      <div class="game"></div>
+      <div class="score">0</div>
+      <div class="gameover">
+        <img src="./assets/image/game-over.png" alt="" class="gameover__img" />
+        <div class="gameover__menu">
+          <div class="best__score">Best: 0</div>
+          <div class="game-score">Score: 0</div>
+          <img src="./assets/image/play.png" alt="" class="play__img" />
+        </div>
+      </div>
+    </div>
+    <div class="ground"></div>
+  </body>
+  <script src="./assets/js/Selectors.js"></script>
+  <script src="./assets/js/Constants.js"></script>
+  <script src="./assets/js/utils.js"></script>
+  <script src="./assets/js/Bird.js"></script>
+  <script src="./assets/js/Obstacles.js"></script>
+  <script src="./assets/js/Script.js"></script>
+</html>
