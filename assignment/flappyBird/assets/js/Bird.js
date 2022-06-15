@@ -43,6 +43,7 @@ class Bird {
         clearInterval(deadInterval);
       }
       this.position.top += 10;
+      this.element.style.transform = 'rotate(90deg)';
       this.element.style.top = toPx(this.position.top);
     }, 10);
   }
