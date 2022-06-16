@@ -4,36 +4,41 @@ let GAME_OVER;
 let SCORE = 0;
 let HIGH_SCORE;
 let startEvent;
+let frame = 0;
+// @desc create obstacle based on previoss object left position of random height
 function createObstacle() {
   let lastObject = obstacles.slice(-1)[0];
   const obstacle = new Obstacle({
     position: {
       left: lastObject
-        ? lastObject.position.left + 250 + Math.ceil(Math.random() * 200)
-        : 500,
+        ? lastObject.position.left +
+          MIN_OBSTACLE_GAP +
+          Math.ceil(Math.random() * RANDOM_OBSTACLE_ADD)
+        : FIRST_OBSTACLE_LEFT,
       top: 0,
     },
     dimension: {
-      // randomly generate Height between 300 and 100
-      height: Math.ceil(Math.random() * 100 + 100),
+      height: Math.ceil(
+        Math.random() * OBSTACLE_RANDOM_HEIGHT + MIN_OBSTACLE_HEIGHT
+      ),
     },
   });
   obstacles.push(obstacle);
 }
+// @desc Creates Bird, initial Obstacles and wait until start button clicked
 function main(replay) {
   bird = new Bird({
     position: {
-      top: 230,
-      left: 20,
+      top: BIRD_DEFAULT_TOP,
+      left: BIRD_DEFAULT_LEFT,
     },
     dimension: {
-      height: 50,
-      width: 50,
+      height: BIRD_DEFAULT_HEIGHT,
+      width: BIRD_DEFAULT_WIDTH,
     },
   });
   gameSelector.appendChild(bird.element);
   obstacles = [];
-  // Create Initial Obctacle
   for (let i = 0; i < 5; i++) {
     createObstacle();
   }
@@ -51,14 +56,13 @@ function main(replay) {
     play();
   });
 }
-
+// @desc Animation loop Restart if GAME_OVER, updateBird check obstacle
 function play() {
   let animationId = window.requestAnimationFrame(play);
+  frame += 1;
   if (GAME_OVER) {
     window.cancelAnimationFrame(animationId);
-    // Restart Codes Here
     bird.deadAnimation();
-
     HIGH_SCORE = localStorage.getItem('HIGH_SCORE');
     if (SCORE > HIGH_SCORE) {
       HIGH_SCORE = SCORE;
@@ -67,23 +71,25 @@ function play() {
     bestScoreGameOver.innerHTML = `Best ${HIGH_SCORE}`;
     gameScore.innerHTML = `Score ${SCORE}`;
     gameOverSelector.style.display = 'block';
+
     replaySelector.addEventListener('click', (event) => {
       event.stopPropagation();
       bird = {};
       gameSelector.innerHTML = '';
       gameOverSelector.style.display = 'none';
-      SCORE = 0;
+      SCORE = SCORE_RESET;
+      scoreSelector.innerHTML = SCORE;
+      frame = FRAME_RESET;
       let replay = true;
       GAME_OVER = false;
       main(replay);
     });
   }
-
   bird.updateBird();
   obstacles.forEach((obstacle) => {
     obstacle.updateObstacle();
     // Check collision only when obstacle is close
-    if (obstacle.position.left < 200) {
+    if (obstacle.position.left < OBSTACLE_CHECK_DISTANCE) {
       GAME_OVER = obstacle.checkCollision(bird);
     }
     if (obstacle.position.left < -OBSTACLE_WIDTH) {

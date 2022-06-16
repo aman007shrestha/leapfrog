@@ -93,19 +93,17 @@
   animation: animateGround 10s linear infinite;
 }
 .bird {
-  border: 1px solid black;
-  background-image: url('../image/yellowbird-midflap.png');
-  background-size: 50px 50px;
-  object-fit: contain;
+  background-image: url('../image/sprite.png');
+  background-size: 160px 52px;
+  background-repeat: no-repeat;
+  /* object-fit: contain; */
   z-index: 2;
 }
 .bottom-obstacle {
-  border: 1px solid black;
   background-image: url('../image/pipe-green.png');
   width: 52px;
 }
 .top-obstacle {
-  border: 1px solid black;
   background-image: url('../image/pipe-green.png');
   transform: rotate(180deg);
   width: 52px;

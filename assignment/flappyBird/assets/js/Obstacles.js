@@ -10,7 +10,7 @@ class Obstacle {
     this.elementTop = document.createElement('div');
     this.elementTop.classList.add('top-obstacle');
     this.elementTop.style.position = 'absolute';
-    this.elementTop.style.width = toPx(52);
+    this.elementTop.style.width = toPx(OBSTACLE_WIDTH);
     this.elementTop.style.height = toPx(this.dimension.height);
     this.elementTop.style.top = toPx(this.position.top);
     this.elementTop.style.left = toPx(this.position.left);
@@ -20,7 +20,7 @@ class Obstacle {
     this.elementBottom.classList.add('bottom-obstacle');
     this.elementBottom.style.position = 'absolute';
     this.elementBottom.style.top = toPx(this.dimension.height + this.gap);
-    this.elementBottom.style.width = toPx(52);
+    this.elementBottom.style.width = toPx(OBSTACLE_WIDTH);
     this.elementBottom.style.left = toPx(this.position.left);
     this.elementBottom.style.height = toPx(
       CONTAINER_HEIGHT - this.dimension.height - GAP
@@ -30,7 +30,7 @@ class Obstacle {
     gameSelector.appendChild(this.elementBottom);
   }
   updateObstacle() {
-    this.position.left -= 2;
+    this.position.left -= OBSTACLE_LEFT_VELOCITY;
     this.elementTop.style.left = toPx(this.position.left);
     this.elementBottom.style.left = toPx(this.position.left);
   }
